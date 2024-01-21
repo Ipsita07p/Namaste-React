@@ -84,6 +84,34 @@ By this we can keep our repository focused on essential files and avoid clutteri
 * files part of project history
 * files necessary for building/running project
 
+# What is the difference between `package.json` and `package-lock.json`?
+
+`package.json`:
+* This configuration file is mandatory for every project that lists the dependencies.
+* It is human -readable and -editable file used to specify desired version of dependencies.
+* It contains basic information about the project.
+* Application name/version/scripts
+
+`package-lock.json`:
+* This version locking file is machine-generated for those operations where npm modifies either the node_module tree or package-json.
+* It is generated after an npm install.
+* It allows future devs & automated systems to download the same dependencies as the project.
+* It records the same version of the installed packages which allows to reinstall them.
+
+# Why should I not modify `package-lock.json`?
+
+The `package-lock.json` file is not intended to be manually edited. It is a generated file that tracks the entire dependency tree and the exact version of each dependency.
+
+Modifying it would cause dependencies issues in the production environment as it's automatically handled by NPM.
+
+# What is `node_modules` ? Is it a good idea to push that on git?
+
+node_modules folder like a cache for the external modules that our project depends upon. When npm installs them, they are downloaded from the web and copied into the node_modules folder and Nodejs is trained to look for them there when you import them (without a specific path). 
+
+`node_modules can't be pushed in git` because it contains lots of files (more than 100 MB), it will cost you memory space.
+
+
+
 
 
 
