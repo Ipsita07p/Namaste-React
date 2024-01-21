@@ -110,8 +110,15 @@ node_modules folder like a cache for the external modules that our project depen
 
 `node_modules can't be pushed in git` because it contains lots of files (more than 100 MB), it will cost you memory space.
 
+# What is the `dist` folder?
 
+The dist folder(short for distribution folder) is a directory that stores the compiled or minified version of an application. 
 
+It is used to deploy an application to a production environment. This is because the compiled and minified code is smaller and faster than the source code, which can improve the performance of the application.
+
+# What is `browserslist`?
+
+`browserslist` is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
 
 
 
