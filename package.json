@@ -1,0 +1,11 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Namaste React by Ipsita",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ipsita Pati",
+  "license": "ISC"
+}
