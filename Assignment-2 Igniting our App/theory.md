@@ -52,13 +52,13 @@ In this case, application state can be retained as there are small changes in co
 
 # List down your favourite 6 superpowers of Parcel and describe any 3 of them in your own words.
 
-1. Minification
+1. Minification: 
     Parcel includes minifiers for JavaScript, CSS, HTML, and SVG out of the box. Minification reduces the file size of your output bundles by removing whitespace, renaming variables to shorter names, and many other optimizations.
 
-2. Tree shaking
+2. Tree shaking: 
     Tree shaking can be seen in production builds where Parcel analyses the imports and exports of each module, and removes everything(basically the code) that isn't used while production.
 
-3. Caching
+3. Caching: 
     Parcel caches everything it builds to disk. If you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build.
 
     By default, the cache is stored in the `.parcel-cache` folder inside project.
