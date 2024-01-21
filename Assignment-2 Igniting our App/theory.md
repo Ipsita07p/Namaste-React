@@ -63,11 +63,11 @@ In this case, application state can be retained as there are small changes in co
 
     By default, the cache is stored in the `.parcel-cache` folder inside project.
 
-    4. Hot reloading
+4. Hot reloading
 
-    5. Diagnostics
+5. Diagnostics
 
-    6. Differential bundling
+6. Differential bundling
 
 # What is `.gitignore`? What should we add and not add into it?
 
